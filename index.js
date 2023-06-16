@@ -48,11 +48,11 @@ const authenticateUser = (username, password, callback) => {
     });
   });
 };
-createUser('Tunar', '1234', (err, userId) => {
+createUser('your_username', 'your_password', (err, userId) => {
   if (err) throw err;
   console.log('User Created ID:', userId);
 
-  authenticateUser('Tunar', '1234', (err, user) => {
+  authenticateUser('your_username', 'your_password', (err, user) => {
     if (err) throw err;
 
     if (user) {
