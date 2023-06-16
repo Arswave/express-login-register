@@ -52,7 +52,6 @@ createUser('Tunar', '1234', (err, userId) => {
   if (err) throw err;
   console.log('User Created ID:', userId);
 
-  // Kullanıcı doğrulama örneği
   authenticateUser('Tunar', '1234', (err, user) => {
     if (err) throw err;
 
